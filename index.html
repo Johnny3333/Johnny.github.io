@@ -519,13 +519,9 @@
 
           </div>
         </section>
-      </div>
-    </article>
-  </div>
-
-  <script src="static/js/main.min.js"></script>
-</body>
-</html>
+</div>
+</article>
+</div>
 
 <h1 id="-visitor-map">🌍 Visitor Map</h1>
 
@@ -534,6 +530,49 @@
     src="//cdn.clustrmaps.com/map_v2.js?cl=1838a3&amp;w=400&amp;t=tt&amp;d=CovrMNiL9TWp_DepHIeiD03aAMA-z-wblg9Uyu2t0PU&amp;co=ffffff&amp;cmo=af1616&amp;cmn=1fba1f&amp;ct=000000">
   </script>
 </div>
+
+<!-- Back To Top -->
+<button id="back-to-top"
+style="
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+padding:10px 15px;
+background:#2c7ad2;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+z-index:999;
+">
+↑ Top
+</button>
+
+<script>
+const btn = document.getElementById('back-to-top');
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300) {
+    btn.style.display = 'block';
+  } else {
+    btn.style.display = 'none';
+  }
+};
+
+btn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+</script>
+
+<script src="static/js/main.min.js"></script>
+
+</body>
+</html>
 
 <!-- 放在 HTML 底部 -->
 <button id="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background: #2c7ad2; color: white; border: none; border-radius: 4px; cursor: pointer;">
