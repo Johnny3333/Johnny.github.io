@@ -339,6 +339,11 @@ body.theme-luka .section-body p {
   margin: 0 0 14px;
 }
 
+body.theme-luka #about .section-body p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 body.theme-luka .section-body ul {
   margin: 0;
   padding-left: 18px;
